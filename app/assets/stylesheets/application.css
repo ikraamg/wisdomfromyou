@@ -88,7 +88,57 @@ select {
   }
 }
 
-:root {
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-shadow: 0 0 10px rgba(224, 224, 224, 0.1);
+}
+.container {
+  max-width: 800px;
+  padding: 40px;
+  background-color: rgba(18, 18, 18, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+h1 {
+  color: #4a90e2;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+p:hover {
+  opacity: 1;
+}
+.signature {
+  text-align: right;
+  font-style: italic;
+  margin-top: 40px;
+}
+.post-thought {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #4a90e2;
+}
+.question {
+  font-weight: bold;
+  color: #03dac6;
+}
+
+/* :root {
   --bg-primary: #1a1a1a;
   --bg-secondary: #2a2a2a;
   --text-primary: #ffffff;
@@ -201,4 +251,4 @@ select:focus {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-}
+} */
