@@ -1,4 +1,6 @@
 class QuestionsController < ApplicationController
+  allow_unauthenticated_access only: [ :index ]
+
   before_action :set_question, only: %i[ show edit update destroy ]
 
   # GET /questions or /questions.json
